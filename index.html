@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="page.title">Blom Service B.V. — Construction Staffing &amp; Delivery Services</title>
+<meta name="description" content="Blom Service B.V. supplies skilled construction workers and reliable delivery crews across the Netherlands, from Amstelveen.">
+
+<!-- Open Graph / Social Preview -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://blomservice.nl/">
+<meta property="og:title"       content="Blom Service B.V. — Construction Staffing &amp; Delivery">
+<meta property="og:description" content="Vetted construction workers and delivery crews dispatched across the Netherlands in 48 hours. Based in Amstelveen.">
+<meta property="og:image"       content="https://blomservice.nl/og-image.jpg">
+<meta name="twitter:card"       content="summary_large_image">
+<meta name="twitter:title"      content="Blom Service B.V. — Construction Staffing &amp; Delivery">
+<meta name="twitter:description" content="Vetted construction workers and delivery crews dispatched across the Netherlands in 48 hours.">
+
+<!-- Favicon (inline SVG → data URI) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F2B4C'/%3E%3Crect x='5' y='5' width='22' height='22' fill='none' stroke='white' stroke-width='1.5' opacity='0.25'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="route-loader" id="route-loader"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-accent-bar" aria-hidden="true"></div>
+  <div class="header-body">
+
+    <!-- LEFT: nav -->
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home" data-link data-num="01" data-i18n="nav.home">Home</a>
+      <a href="#services" data-link data-num="02" data-i18n="nav.services">Services</a>
+      <a href="#about" data-link data-num="03" data-i18n="nav.about">About</a>
+      <a href="#contact" data-link data-num="04" data-i18n="nav.contact">Contact</a>
+      <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+    </nav>
+
+    <!-- CENTER: brand -->
+    <a href="#home" class="brand" data-link>
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">
+        <strong>BLOM SERVICE</strong>
+        <span>B.V. — Amstelveen</span>
+      </span>
+    </a>
+
+    <!-- RIGHT: phone + cta -->
+    <div class="header-right">
+      <div class="header-phone">
+        <span data-i18n="header.dispatch">Dispatch line</span>
+        <strong>+31 20 123 4567</strong>
+      </div>
+      <div class="lang-switcher" id="lang-switcher">
+        <select id="lang-select" aria-label="Select language">
+          <option value="en">🇬🇧 EN</option>
+          <option value="nl">🇳🇱 NL</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="it">🇮🇹 IT</option>
+          <option value="pl">🇵🇱 PL</option>
+        </select>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-link><span data-i18n="header.requestCrew">Request Crew</span> <span class="btn-arrow">&rarr;</span></a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="hazard-rule thin"></div>
+
+<main>
+
+<!-- ============================================
+     SECTION: HOME
+     ============================================ -->
+<div class="page-section active" id="home" data-page="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Construction Staffing &amp; Delivery</p>
+        <h1 data-i18n="hero.h1">Crews on site.<br>On time, <em>every time.</em></h1>
+        <p class="hero-lede" data-i18n="hero.lede">Blom Service supplies vetted construction workers and dependable delivery teams to contractors across the Netherlands — booked in 48 hours, backed by people who show up.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-link><span data-i18n="hero.cta1">Request a Crew</span> <span class="btn-arrow">&rarr;</span></a>
+          <a href="#services" class="btn btn-outline" data-link><span data-i18n="hero.cta2">View Services</span></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong data-count="480" data-suffix="+">0</strong>
+            <span data-i18n="hero.stat1">Workers placed</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="120" data-suffix="+">0</strong>
+            <span data-i18n="hero.stat2">Active contractors</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="48" data-suffix=" HRS">0</strong>
+            <span data-i18n="hero.stat3">Average dispatch time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOGO STRIP ============ -->
+  <div class="container">
+    <div class="logo-strip">
+      <span class="lbl" data-i18n="home.trustedBy">Trusted by site managers at</span>
+      <div class="marks">
+        <span>VANDERHEIJDEN BOUW</span>
+        <span>NOORDWEG INFRA</span>
+        <span>DELTA CONTRACTORS</span>
+        <span>RIVIERA LOGISTICS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES OVERVIEW ============ -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <p class="eyebrow" data-i18n="home.whatWeDo">What we do</p>
+          <h2 data-i18n="home.twoTrades">Two trades. One standard of reliability.</h2>
+        </div>
+        <a href="#services" class="btn btn-outline-dark" data-link><span data-i18n="home.allServices">All Services</span> <span class="btn-arrow">&rarr;</span></a>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <span class="service-num">01</span>
+          <h3 data-i18n="svc.constr.title">Construction Workers</h3>
+          <p data-i18n="svc.constr.desc">General labourers, groundworkers, carpenters and finishing crews, screened and ready to deploy to your site.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 11h4l3 3v2h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg>
+          </div>
+          <span class="service-num">02</span>
+          <h3 data-i18n="svc.deliv.title">Delivery Services</h3>
+          <p data-i18n="svc.deliv.desc">Material handling and last-mile delivery for sites and depots, coordinated with your build schedule.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <span class="service-num">03</span>
+          <h3 data-i18n="svc.staff.title">Staffing Support</h3>
+          <p data-i18n="svc.staff.desc">Shift planning, compliance documentation and on-call replacement so a no-show never stalls your build.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="bg-dim">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="process.eyebrow">How it works</p>
+        <h2 data-i18n="process.h2">Four steps from call to crew on site.</h2>
+        <p data-i18n="process.sub">No long onboarding. Tell us the role, the site, and the date — we handle the rest.</p>
+      </div>
+
+      <div class="process-list">
+        <div class="process-step reveal">
+          <span class="num">01</span>
+          <div>
+            <h3 data-i18n="process.1.title">Tell us what the job needs</h3>
+            <p data-i18n="process.1.desc">Share the trade, headcount, site location and start date through a quick call or the request form.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="num">02</span>
+          <div>
+            <h3 data-i18n="process.2.title">We match qualified workers</h3>
+            <p data-i18n="process.2.desc">We draw from our vetted pool of construction and delivery staff, matched to the skills and certifications your site requires.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="num">03</span>
+          <div>
+            <h3 data-i18n="process.3.title">Crew confirmed within 48 hours</h3>
+            <p data-i18n="process.3.desc">You receive worker profiles and a confirmed start time — typically inside two business days.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="num">04</span>
+          <div>
+            <h3 data-i18n="process.4.title">Ongoing cover, no gaps</h3>
+            <p data-i18n="process.4.desc">If someone is unavailable, we arrange a qualified replacement before the shift starts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAND ============ -->
+  <section class="bg-ink section-tight">
+    <div class="container">
+      <div class="stat-strip">
+        <div class="stat-item">
+          <strong data-count="48" data-suffix="H">0</strong>
+          <span data-i18n="stats.dispatch">Average crew dispatch</span>
+        </div>
+        <div class="stat-item">
+          <strong data-count="480" data-suffix="+">0</strong>
+          <span data-i18n="stats.workers">Workers in active rotation</span>
+        </div>
+        <div class="stat-item">
+          <strong data-count="120" data-suffix="+">0</strong>
+          <span data-i18n="stats.contractors">Contractors served</span>
+        </div>
+        <div class="stat-item">
+          <strong data-static="7 / 7">7 / 7</strong>
+          <span data-i18n="stats.days">Days dispatch coverage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="testimonial reveal">
+        <blockquote data-i18n="testimonial.quote">Blom Service has never left a shift uncovered. When a groundworker called in sick on a Monday, they had a replacement on site before lunch.</blockquote>
+        <cite>R. de Groot <span>Site Manager, Vanderheijden Bouw</span></cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2 data-i18n="cta.home.h2">Need workers on site this week?</h2>
+          <p data-i18n="cta.home.p">Tell us the trade and the date — we'll have a crew confirmed within 48 hours.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary" data-link><span data-i18n="hero.cta1">Request a Crew</span> <span class="btn-arrow">&rarr;</span></a>
+          <a href="tel:+31201234567" class="btn btn-outline">Call +31 20 123 4567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /#home -->
+
+
+<!-- ============================================
+     SECTION: SERVICES
+     ============================================ -->
+<div class="page-section" id="services" data-page="services">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="#home" data-link>Home</a> <span>/ Services</span></p>
+      <p class="eyebrow" data-i18n="svcPage.eyebrow">What we offer</p>
+      <h1 data-i18n="svcPage.h1">Staffing built for construction schedules.</h1>
+      <p data-i18n="svcPage.sub">From groundworkers to last-mile delivery, every placement is screened, briefed and backed by a replacement guarantee if a shift is ever at risk.</p>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE FILTER ============ -->
+  <section class="bg-white section-tight" style="padding-bottom:0;">
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="Filter services by category">
+        <button class="filter-pill active" data-filter="all" data-i18n="filter.all">All Services</button>
+        <button class="filter-pill" data-filter="construction" data-i18n="filter.construction">Construction Workers</button>
+        <button class="filter-pill" data-filter="delivery" data-i18n="filter.delivery">Delivery Services</button>
+        <button class="filter-pill" data-filter="staffing" data-i18n="filter.staffing">Staffing Support</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE 01 — DETAIL ============ -->
+  <section class="bg-white filter-section" data-category="construction" id="svc-construction">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Service 01</p>
+        <h2>Construction Workers</h2>
+        <p>Skilled and general labour, matched to the trade and certifications your site requires — placed individually or as a full crew.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>General Labourers</h3>
+          <p>Site clearance, material handling, demolition support and groundwork — available on short notice for single days or full projects.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10l-2 2-2-2M12 12V3M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+          </div>
+          <h3>Carpenters &amp; Finishers</h3>
+          <p>Formwork, framing and interior finishing tradespeople, vetted for hands-on experience before they're matched to your site.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Short &amp; Long-Term Crews</h3>
+          <p>Book a single labourer for a day, or a standing crew for the length of a project — terms scale to the size of your job.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container hazard-divider"><div class="hazard-rule"></div></div>
+
+  <!-- ============ SERVICE 02 — DETAIL ============ -->
+  <section class="bg-dim filter-section" data-category="delivery" id="svc-delivery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Service 02</p>
+        <h2>Delivery Services</h2>
+        <p>Material and equipment delivered to site on your build schedule, with drivers briefed on site access and unloading requirements.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 11h4l3 3v2h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg>
+          </div>
+          <h3>Site Material Delivery</h3>
+          <p>Timed drop-offs for building materials and supplies, coordinated to avoid bottlenecks at the gate.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Depot-to-Site Runs</h3>
+          <p>Recurring transport between yards, depots and active sites, scheduled around your daily build sequence.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 00-2 2v10h16v-4M2 12h14M12 8V4M16 4h4v4"/></svg>
+          </div>
+          <h3>Last-Mile Handling</h3>
+          <p>Final-stretch delivery and unloading support, including manual handling where a forklift can't reach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE 03 — STAFFING SUPPORT ============ -->
+  <section class="bg-white filter-section" data-category="staffing" id="svc-staffing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Service 03</p>
+        <h2>Staffing Support</h2>
+        <p>The administrative layer behind every placement — so contractors manage the build, not the paperwork.</p>
+      </div>
+
+      <div class="process-list">
+        <div class="process-step reveal">
+          <span class="num">01</span>
+          <div>
+            <h3>Shift Planning</h3>
+            <p>Rosters built around your project timeline, with cover arranged in advance for predictable busy periods.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="num">02</span>
+          <div>
+            <h3>Compliance Documentation</h3>
+            <p>Right-to-work checks, safety certifications and site inductions handled before a worker steps on site.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="num">03</span>
+          <div>
+            <h3>On-Call Replacement</h3>
+            <p>A no-show triggers an immediate search for cover, so the shift isn't lost.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <span class="num">04</span>
+          <div>
+            <h3>Single Point of Contact</h3>
+            <p>One coordinator for every site, so a schedule change is one phone call, not a chain of emails.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="bg-dim">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently asked.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <button class="faq-q">
+            How quickly can a crew start?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Most requests are confirmed within 48 hours of your call. Urgent same-day cover is available depending on trade and location — ask when you call.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What trades do you cover?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">General labourers, groundworkers, carpenters, finishing crews and delivery drivers. If your site needs a trade not listed here, contact us — we may still be able to help.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What happens if a worker doesn't show up?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">We arrange a qualified replacement as soon as we're notified, so the shift is covered with minimal delay to your schedule.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Can I book a single day or only longer contracts?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Both. We staff single-day cover as well as standing crews for the full length of a project.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2>Ready to put a crew on site?</h2>
+          <p>Send us your trade, headcount and start date — we'll take it from there.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary" data-link><span data-i18n="hero.cta1">Request a Crew</span> <span class="btn-arrow">&rarr;</span></a>
+          <a href="tel:+31201234567" class="btn btn-outline">Call +31 20 123 4567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /#services -->
+
+
+<!-- ============================================
+     SECTION: ABOUT
+     ============================================ -->
+<div class="page-section" id="about" data-page="about">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="#home" data-link>Home</a> <span>/ About Us</span></p>
+      <p class="eyebrow" data-i18n="about.eyebrow">Our story</p>
+      <h1 data-i18n="about.h1">Built on showing up.</h1>
+      <p data-i18n="about.heroSub">Blom Service B.V. was founded in Amstelveen with one standard: when a contractor calls, a qualified worker is on site — not eventually, but on schedule.</p>
+    </div>
+  </section>
+
+  <!-- ============ MISSION / INTRO ============ -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="about.whoEyebrow">Who we are</p>
+        <h2 data-i18n="about.whoH2">A staffing partner that treats reliability as the product.</h2>
+        <p data-i18n="about.whoDesc">Blom Service B.V. is registered in Amstelveen, the Netherlands, and supplies construction labour and delivery crews to contractors across the country. The company was incorporated to bring discipline and accountability to a trade where last-minute gaps cost real money — every placement is screened, briefed, and backed by a same-week replacement guarantee.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALUES ============ -->
+  <section class="bg-dim">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="values.eyebrow">What we stand for</p>
+        <h2 data-i18n="values.h2">Three commitments behind every placement.</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3 data-i18n="values.1.title">Reliability</h3>
+          <p data-i18n="values.1.desc">A confirmed start time is a commitment, not an estimate. If a worker can't make it, we find cover before the shift starts.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3 data-i18n="values.2.title">Vetted People</h3>
+          <p data-i18n="values.2.desc">Every worker is screened for trade competency, certification and right-to-work before they're matched to a site.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 11h4l3 3v2h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg>
+          </div>
+          <h3 data-i18n="values.3.title">Straightforward Process</h3>
+          <p data-i18n="values.3.desc">One coordinator, one phone call, no chasing paperwork through three departments to change a shift.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our path</p>
+        <h2>From registration to the job site.</h2>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="year">2026</span>
+          <h3>Company incorporated in Amstelveen</h3>
+          <p>Blom Service B.V. is established under Dutch law, with its registered office in Amstelveen and a founding focus on construction staffing and delivery support.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Early operations</span>
+          <h3>First contractor partnerships</h3>
+          <p>Initial placements with regional contractors set the standard the company still holds: confirmed crews, on schedule, with cover arranged in advance.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Today</span>
+          <h3>A growing network of vetted workers</h3>
+          <p>An active pool of construction and delivery staff is maintained and matched against incoming site requests across the Netherlands.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Ahead</span>
+          <h3>Expanding dispatch coverage</h3>
+          <p>Continued growth of the worker network is aimed at shortening dispatch time further and widening the trades the company can cover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEADERSHIP ============ -->
+  <section class="bg-dim">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Leadership</p>
+        <h2>Managed with direct accountability.</h2>
+        <p>Blom Service B.V. is managed by G Jeff Care B.V., bringing operational oversight to every placement decision the company makes.</p>
+      </div>
+
+      <div class="card-grid" style="grid-template-columns:repeat(2,1fr); max-width:760px;">
+        <div class="team-card reveal">
+          <div class="team-photo"></div>
+          <h3>G Jeff Care B.V.</h3>
+          <p class="role">Managing Director</p>
+          <p>Holds sole management responsibility for Blom Service B.V., overseeing staffing standards, client relationships and day-to-day operations.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-photo"></div>
+          <h3>Gordon Jeff Blom</h3>
+          <p class="role">Director, G Jeff Care B.V.</p>
+          <p>Acts on behalf of the managing director in the formation and ongoing direction of Blom Service B.V.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div>
+          <h2>Want to work with a crew that shows up?</h2>
+          <p>Get in touch and tell us what your site needs.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary" data-link>Contact Us <span class="btn-arrow">&rarr;</span></a>
+          <a href="#services" class="btn btn-outline" data-link>View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /#about -->
+
+
+<!-- ============================================
+     SECTION: CONTACT
+     ============================================ -->
+<div class="page-section" id="contact" data-page="contact">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="#home" data-link>Home</a> <span>/ Contact</span></p>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Get in touch</p>
+      <h1 data-i18n="contact.h1">Tell us what your site needs.</h1>
+      <p data-i18n="contact.sub">Share the trade, headcount and start date — we'll confirm a crew within 48 hours, usually sooner.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT FORM + INFO ============ -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="form-grid">
+
+        <!-- Form -->
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="contact.formEyebrow">Request a crew</p>
+          <h2 style="font-size:28px; margin:14px 0 28px;" data-i18n="contact.formTitle">Send us the details</h2>
+
+          <form id="contact-form" novalidate data-emailjs-service="service_blom" data-emailjs-template="template_blom">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name" data-i18n="form.name">Full name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="company" data-i18n="form.company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email" data-i18n="form.email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-field">
+                <label for="phone" data-i18n="form.phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="service" data-i18n="form.serviceLabel">What do you need? *</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option value="construction">Construction Workers</option>
+                <option value="delivery">Delivery Services</option>
+                <option value="staffing">Staffing Support</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="headcount" data-i18n="form.headcount">Workers needed</label>
+                <input type="number" id="headcount" name="headcount" min="1" placeholder="e.g. 4">
+              </div>
+              <div class="form-field">
+                <label for="start-date" data-i18n="form.startDate">Start date</label>
+                <input type="date" id="start-date" name="start-date">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message" data-i18n="form.message">Project details *</label>
+              <textarea id="message" name="message" required placeholder="Site location, trade required, shift length..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary"><span data-i18n="form.submit">Send Request</span> <span class="btn-arrow">&rarr;</span></button>
+            <p class="form-note" data-i18n="form.note">We typically respond within one business day.</p>
+            <div id="form-status" class="form-status" role="status"></div>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="reveal">
+          <div class="info-card">
+            <h3 data-i18n="contact.infoTitle">Direct contact</h3>
+
+            <div class="info-row">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+31201234567">+31 20 123 4567</a>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@blomservice.nl">info@blomservice.nl</a>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <strong>Office</strong>
+                <span>Amsterdamseweg 153C<br>1182 GT Amstelveen, NL</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </span>
+              <div>
+                <strong>Office hours</strong>
+                <span>Mon &ndash; Fri, 07:00 &ndash; 18:00<br>Dispatch line answered 7 days</span>
+              </div>
+            </div>
+
+            <div class="map-block">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.912!2d4.858!3d52.3022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e14f6c2c4c8d%3A0xa00e7b6c1234abcd!2sAmsterdamseweg%2C+Amstelveen!5e0!3m2!1sen!2snl!4v1700000000001"
+                width="100%" height="200" style="border:0; display:block; border-radius:4px;"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Blom Service B.V. office location">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="bg-dim">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Before you send</p>
+        <h2>Quick answers.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <button class="faq-q">
+            How fast will I hear back?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Within one business day for general enquiries. For urgent crew requests, call the dispatch line directly for a faster response.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Do you cover sites outside Amstelveen?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes — we dispatch construction and delivery crews to sites across the Netherlands. Mention your site location in the form and we'll confirm coverage.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Is there a minimum booking size?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">No minimum — we place single workers for short cover as well as full crews for ongoing projects.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /#contact -->
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand" data-link>
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <strong>BLOM SERVICE</strong>
+            <span>B.V. — Amstelveen</span>
+          </span>
+        </a>
+        <p data-i18n="footer.desc">Construction staffing and delivery services, dispatched across the Netherlands from our Amstelveen office.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home" data-link>Home</a></li>
+          <li><a href="#services" data-link>Services</a></li>
+          <li><a href="#about" data-link>About Us</a></li>
+          <li><a href="#contact" data-link>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services" data-link>Construction Workers</a></li>
+          <li><a href="#services" data-link>Delivery Services</a></li>
+          <li><a href="#services" data-link>Staffing Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+31201234567">+31 20 123 4567</a></li>
+          <li><a href="mailto:info@blomservice.nl">info@blomservice.nl</a></li>
+          <li><span style="font-size:14px; color:rgba(255,255,255,0.6);">Amsterdamseweg 153C<br>1182 GT Amstelveen, NL</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Blom Service B.V. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">KvK Registration</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp float button -->
+<a class="whatsapp-float" href="https://wa.me/31201234567?text=Hello%2C%20I%20would%20like%20to%20request%20a%20crew." target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.858L.057 23.885a.5.5 0 00.606.63l6.162-1.615A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.948 9.948 0 01-5.073-1.384l-.361-.214-3.759.985.999-3.658-.236-.375A9.946 9.946 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- Sticky mobile CTA -->
+<div class="mobile-cta-bar" id="mobile-cta-bar">
+  <a href="tel:+31201234567" class="mobile-cta-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    Call now
+  </a>
+  <a href="#contact" class="mobile-cta-request" data-link>Request Crew →</a>
+</div>
+
+<!-- GDPR Cookie Banner -->
+<div class="gdpr-banner" id="gdpr-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+  <div class="gdpr-inner">
+    <p data-i18n="gdpr.text">We use cookies to improve your experience. By continuing to use this site, you accept our <a href="#">Privacy Policy</a>.</p>
+    <div class="gdpr-actions">
+      <button class="gdpr-decline" id="gdpr-decline" data-i18n="gdpr.decline">Decline</button>
+      <button class="gdpr-accept" id="gdpr-accept" data-i18n="gdpr.accept">Accept all</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="i18n.js"></script>
+</body>
+</html>
